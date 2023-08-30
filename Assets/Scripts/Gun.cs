@@ -1,32 +1,15 @@
 using System.Collections;
 using Default;
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Gun : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private Joystick joystick;
     [SerializeField] private GameObject belfry;
     [SerializeField] private GameObject muzzle;
     
     private bool _canShot = true;
     private bool _isRelouding = false;
-
-    private void Update()
-    {
-        if (joystick.Direction != Vector2.zero)
-        {
-            MovmentDirection();
-        }
-    }
-
-    private void MovmentDirection()
-    {
-        belfry.transform.rotation = Quaternion.LookRotation(Vector3.forward,
-            joystick.Direction);
-    }
 
     private Vector2 ShotDirection()
     {
@@ -38,10 +21,6 @@ public class Gun : MonoBehaviour
         if (_canShot)
         {
             Shot();
-        }
-        else
-        {
-            
         }
     }
 
