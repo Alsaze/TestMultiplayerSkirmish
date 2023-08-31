@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="49aa6867-ef7a-4aba-ada1-b9e7fc1989f0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestMultiplayerSkirmish/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestMultiplayerSkirmish/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floating Joystick(Movment) Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floating Joystick(Movment) Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mirror/Examples/Tanks/Prefabs/Tank.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mirror/Examples/Tanks/Prefabs/Tank.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCameraController.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +16,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24d45e813e524a99bfb7a145158a7980157a00/1e/660c6eea/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24d45e813e524a99bfb7a145158a7980157a00/57/af5b3005/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24d45e813e524a99bfb7a145158a7980157a00/86/a9eb537b/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24d45e813e524a99bfb7a145158a7980157a00/c0/9af72561/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24d45e813e524a99bfb7a145158a7980157a00/c7/2f5c827d/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystem/TestingInputSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Work/TestMultiplayerSkirmish/Assets/Prefabs/Bullet.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WindowButtons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Plugins/OnScreen/OnScreenStick.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
@@ -123,7 +119,9 @@
       <workItem from="1693311509703" duration="591000" />
       <workItem from="1693317690423" duration="9169000" />
       <workItem from="1693382827443" duration="9790000" />
-      <workItem from="1693399741315" duration="797000" />
+      <workItem from="1693399741315" duration="1719000" />
+      <workItem from="1693465145549" duration="2557000" />
+      <workItem from="1693476324861" duration="3108000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1693311654169</created>
@@ -132,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693311654169</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add InputSystem&#10;add ParelSync">
+      <created>1693409550980</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693409550980</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +160,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="add InputSystem&#10;add ParelSync" />
+    <option name="LAST_COMMIT_MESSAGE" value="add InputSystem&#10;add ParelSync" />
   </component>
 </project>
