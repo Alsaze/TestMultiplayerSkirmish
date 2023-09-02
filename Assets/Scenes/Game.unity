@@ -9338,6 +9338,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1442706043}
     m_Modifications:
+    - target: {fileID: 170045442753598874, guid: 12063a1ac8f824b449690d946e1e5657, type: 3}
+      propertyPath: m_ControlPath
+      value: <Gamepad>/leftStick
+      objectReference: {fileID: 0}
     - target: {fileID: 2909086600278759332, guid: 12063a1ac8f824b449690d946e1e5657, type: 3}
       propertyPath: m_Name
       value: Floating Joystick(Movment)

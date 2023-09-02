@@ -1,5 +1,6 @@
 using System.Collections;
 using Default;
+using Mirror;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
@@ -23,7 +24,7 @@ public class Gun : MonoBehaviour
             Shot();
         }
     }
-
+    [Server]
     private void Shot()
     {
         _canShot = false;
@@ -37,7 +38,7 @@ public class Gun : MonoBehaviour
 
     private void OnReloud()
     {
-        if (_isRelouding==false)
+        if (_isRelouding == false)
         {
             StartCoroutine("ReloudTimer");
         }
