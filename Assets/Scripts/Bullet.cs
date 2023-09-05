@@ -1,5 +1,3 @@
-using System;
-using Mirror;
 using UnityEngine;
 
 namespace Default
@@ -16,8 +14,13 @@ namespace Default
         }
         private void OnTriggerEnter2D(Collider2D col)
         {
-            Debug.Log("col.gameObject.name");
-            Destroy(gameObject);
+            if (col.gameObject.CompareTag("Player"))
+            {
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
         private void Update()
         {

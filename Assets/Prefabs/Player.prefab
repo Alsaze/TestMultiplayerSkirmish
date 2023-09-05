@@ -250,6 +250,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3efa4e2f5663745a122916c1cde90a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   bulletPrefab: {fileID: 1421942675452670106, guid: a80112b28d372c54989354562fca4a21, type: 3}
   belfry: {fileID: 417586041291564384}
   muzzle: {fileID: 417586042252708851}
@@ -356,7 +359,7 @@ GameObject:
   - component: {fileID: 5725732394368743208}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -421,7 +424,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.003542319, y: 0.00000047683716}

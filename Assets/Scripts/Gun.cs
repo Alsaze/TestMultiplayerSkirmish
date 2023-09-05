@@ -21,7 +21,6 @@ public class Gun : NetworkBehaviour
     {
         if (_canShot)
         {
-            Debug.Log("Shot");
             Shot();
         }
     }
@@ -29,13 +28,13 @@ public class Gun : NetworkBehaviour
     {
         _canShot = false;
         
-        CreateBullet();
+        CmdCreateBullet();
         
         OnReloud();
     }
 
     [Command]
-    private void CreateBullet()
+    private void CmdCreateBullet()
     {
         GameObject newBullet = Instantiate(bulletPrefab, muzzle.transform.position,
             belfry.transform.rotation * bulletPrefab.transform.rotation);

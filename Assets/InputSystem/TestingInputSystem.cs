@@ -40,7 +40,7 @@ public class TestingInputSystem : NetworkBehaviour
         if (_isAuthority)
         {
             Vector2 inputVector2 = _playerInputAction.Player.Movment.ReadValue<Vector2>();
-            float moveSpeed = 1.5f;
+            float moveSpeed = 5;//1.5f
             _rb.velocity = inputVector2 * moveSpeed;
         
             if (inputVector2!=Vector2.zero)
