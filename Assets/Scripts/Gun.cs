@@ -3,7 +3,7 @@ using Default;
 using Mirror;
 using UnityEngine;
 
-public class Gun : MonoBehaviour
+public class Gun : NetworkBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private GameObject belfry;
@@ -17,23 +17,32 @@ public class Gun : MonoBehaviour
         return muzzle.transform.position - belfry.transform.position;
     }
 
-    private void TryToShot()
+    public void TryToShot()
     {
         if (_canShot)
         {
+            Debug.Log("Shot");
             Shot();
         }
     }
-    [Server]
     private void Shot()
     {
         _canShot = false;
         
+        CreateBullet();
+        
+        OnReloud();
+    }
+
+    [Command]
+    private void CreateBullet()
+    {
         GameObject newBullet = Instantiate(bulletPrefab, muzzle.transform.position,
             belfry.transform.rotation * bulletPrefab.transform.rotation);
-        newBullet.GetComponent<Bullet>().Setup(ShotDirection());
-            
-        OnReloud();
+        
+        NetworkServer.Spawn(newBullet);//Spawn on server
+        
+        newBullet.GetComponent<Bullet>().Setup(ShotDirection());//make a direction and controll a bullet
     }
 
     private void OnReloud()
@@ -51,15 +60,5 @@ public class Gun : MonoBehaviour
         yield return new WaitForSeconds(shotColwdown);
         _canShot = true;
         _isRelouding = false;
-    }
-
-    private void OnEnable()
-    {
-        FixedJoystick.OnShot += TryToShot;
-    }
-
-    private void OnDisable()
-    {
-        FixedJoystick.OnShot -= TryToShot;
     }
 }

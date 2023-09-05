@@ -410,6 +410,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   belfry: {fileID: 417586041291564384}
+  gun: {fileID: 417586041332232560}
 --- !u!61 &417586041431397835
 BoxCollider2D:
   m_ObjectHideFlags: 0

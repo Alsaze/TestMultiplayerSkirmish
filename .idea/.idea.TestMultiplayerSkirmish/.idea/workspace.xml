@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="49aa6867-ef7a-4aba-ada1-b9e7fc1989f0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestMultiplayerSkirmish/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestMultiplayerSkirmish/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/PlayerInputAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/PlayerInputAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/PlayerInputAction.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/PlayerInputAction.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/TestingInputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/TestingInputSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gun.cs" afterDir="false" />
     </list>
@@ -23,7 +24,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24d45e813e524a99bfb7a145158a7980157a00/c0/9af72561/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/24d45e813e524a99bfb7a145158a7980157a00/c7/2f5c827d/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InputSystem/TestingInputSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Work/TestMultiplayerSkirmish/Assets/Scripts/Bullet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Work/TestMultiplayerSkirmish/Assets/Prefabs/Main Camera.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WindowButtons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Plugins/OnScreen/OnScreenStick.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
@@ -126,7 +127,8 @@
       <workItem from="1693465145549" duration="2557000" />
       <workItem from="1693476324861" duration="3818000" />
       <workItem from="1693645639833" duration="817000" />
-      <workItem from="1693651369672" duration="1522000" />
+      <workItem from="1693651369672" duration="1777000" />
+      <workItem from="1693910456032" duration="5533000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1693311654169</created>
@@ -149,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693479534805</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add old Input files and preparation to remote work on laptop">
+      <created>1693663814053</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693663814053</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +183,7 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="add InputSystem&#10;add ParelSync" />
     <MESSAGE value="Fix PlayerCameraController.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix PlayerCameraController.cs" />
+    <MESSAGE value="Add old Input files and preparation to remote work on laptop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add old Input files and preparation to remote work on laptop" />
   </component>
 </project>

@@ -2,10 +2,13 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Mirror;
+using System;
 
 public class TestingInputSystem : NetworkBehaviour
 {
     [SerializeField] private GameObject belfry;
+    [SerializeField] private GameObject gun;
+    private Gun _gun;
     
     private Rigidbody2D _rb;
     private PlayerInput _playerInput;
@@ -16,9 +19,20 @@ public class TestingInputSystem : NetworkBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _playerInput = GetComponent<PlayerInput>();
-        
+        _gun = gun.GetComponent<Gun>();
+
         _playerInputAction = new PlayerInputAction();
         _playerInputAction.Enable();
+
+        _playerInputAction.Player.Fire.performed += Fire;
+    }
+
+    private void Fire(InputAction.CallbackContext context)
+    {
+        if (context.performed && _isAuthority)
+        {
+            _gun.TryToShot();
+        }
     }
 
     private void FixedUpdate()
