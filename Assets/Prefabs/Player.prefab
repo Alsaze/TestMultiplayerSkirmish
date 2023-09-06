@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 417586041431397837}
   - component: {fileID: 417586041431397838}
   - component: {fileID: 1377656856949608664}
+  - component: {fileID: 434186110669994410}
   - component: {fileID: 417586041431397835}
   - component: {fileID: 417586041431397839}
   - component: {fileID: 417586041431397832}
@@ -414,6 +415,18 @@ MonoBehaviour:
   syncInterval: 0
   belfry: {fileID: 417586041291564384}
   gun: {fileID: 417586041332232560}
+--- !u!114 &434186110669994410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417586041431397828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72afc907f89b4c16a3bee55fbdcd0e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &417586041431397835
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -424,7 +437,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.003542319, y: 0.00000047683716}
