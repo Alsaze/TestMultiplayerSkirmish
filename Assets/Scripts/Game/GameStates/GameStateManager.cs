@@ -1,15 +1,26 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 
 namespace GameStates
 {
     public class GameStateManager : MonoBehaviour
     {
+        public static GameStateManager Instance;
         private Dictionary<Type, IGameBehavior> _behaviorsMap;
         private IGameBehavior _behaviorCurrent;
 
+        [Server]
+        private void Awake()//singletone
+        {
+            if (Instance==null)
+            {
+                Instance = this;
+            }
+        }
+
+        [Server]
         private void Start()
         {
             InitBehaviors();
@@ -25,7 +36,8 @@ namespace GameStates
             _behaviorsMap[typeof(GameBehaviorPlayingLateGame)] = new GameBehaviorPlayingLateGame();
             _behaviorsMap[typeof(GameBehaviorEndGame)] = new GameBehaviorEndGame();
         }
-
+        
+        [Server]
         private void SetBehavior(IGameBehavior newBehavior)
         {
             if (_behaviorCurrent != null)
@@ -55,25 +67,29 @@ namespace GameStates
                 _behaviorCurrent.Update();
             }
         }
-
+        
+        [Server]
         public void SetBehaviorWaitingPlayers()
         {
             var behavior = GetBehavior<GameBehaviorWaitingPlayers>();
             SetBehavior(behavior);
         }
-
+        
+        [Server]
         public void SetBehaviorPlayingEarlyGame()
         {
             var behavior = GetBehavior<GameBehaviorPlayingEarlyGame>();
             SetBehavior(behavior);
         }
-
+        
+        [Server]
         public void SetBehaviorPlayingLateGame()
         {
             var behavior = GetBehavior<GameBehaviorPlayingLateGame>();
             SetBehavior(behavior);
         }
-
+        
+        [Server]
         public void SetBehaviorEndGame()
         {
             var behavior = GetBehavior<GameBehaviorEndGame>();

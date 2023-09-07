@@ -9,13 +9,14 @@ namespace GameStates
             Debug.Log("GameBehaviorWaitingPlayers Start");
         }
 
-        public void Exit()
-        {
-        }
-
         public void Update()
         {
             Debug.Log("WaitPlayer");
+        }
+
+        public void Exit()
+        {
+            Debug.Log("3,2,1");
         }
     }
 }

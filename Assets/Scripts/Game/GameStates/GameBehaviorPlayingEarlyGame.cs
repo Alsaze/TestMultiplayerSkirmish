@@ -9,13 +9,14 @@ namespace GameStates
             Debug.Log("GameBehaviorPlayingEarlyGame");
         }
 
-        public void Exit()
-        {
-        }
-
         public void Update()
         {
             Debug.Log("Earlygame play");
+        }
+
+        public void Exit()
+        {
+            Debug.Log("Earlygame End");
         }
     }
 }

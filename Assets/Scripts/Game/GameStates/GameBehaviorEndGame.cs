@@ -9,13 +9,14 @@ namespace GameStates
             Debug.Log("GameBehaviorEndGame start");
         }
 
-        public void Exit()
-        {
-        }
-
         public void Update()
         {
             Debug.Log("EndGame");
+        }
+
+        public void Exit()
+        {
+            
         }
     }
 }

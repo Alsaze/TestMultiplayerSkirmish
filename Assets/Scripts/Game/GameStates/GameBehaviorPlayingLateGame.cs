@@ -9,13 +9,14 @@ namespace GameStates
             Debug.Log("GameBehaviorPlayingLateGame start");
         }
 
-        public void Exit()
-        {
-        }
-
         public void Update()
         {
             Debug.Log("Lategame play");
+        }
+
+        public void Exit()
+        {
+            
         }
     }
 }
