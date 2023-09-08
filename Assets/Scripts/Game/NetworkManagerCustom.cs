@@ -10,7 +10,6 @@ public class NetworkManagerCustom : NetworkManager
     {
         base.OnServerConnect(conn);
         _playerCount++;
-        Debug.Log(_playerCount);
         
         if (_playerCount == _playerCountforGame)
         {
@@ -26,6 +25,5 @@ public class NetworkManagerCustom : NetworkManager
     {
         base.OnServerDisconnect(conn);
         _playerCount--;
-        Debug.Log(_playerCount);
     }
 }

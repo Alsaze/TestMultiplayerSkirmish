@@ -1,3 +1,4 @@
+using Game;
 using UnityEngine;
 
 namespace GameStates
@@ -6,14 +7,12 @@ namespace GameStates
     {
         public void Enter()
         {
-            Debug.Log("GameBehaviorPlayingEarlyGame");
+            Timer.Instance.StartTimer(true);
         }
-
         public void Update()
         {
-            Debug.Log("Earlygame play");
+            
         }
-
         public void Exit()
         {
             Debug.Log("Earlygame End");
