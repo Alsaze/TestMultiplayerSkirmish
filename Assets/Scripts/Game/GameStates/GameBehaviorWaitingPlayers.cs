@@ -11,12 +11,12 @@ namespace GameStates
 
         public void Update()
         {
-            Debug.Log("WaitPlayer");
+            Debug.Log("WaitingPlayers Update");
         }
 
         public void Exit()
         {
-            Debug.Log("3,2,1");
+            Debug.Log("WaitingPlayers Exit");
         }
     }
 }

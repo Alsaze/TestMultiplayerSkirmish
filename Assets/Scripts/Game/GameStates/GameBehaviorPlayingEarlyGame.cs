@@ -7,15 +7,17 @@ namespace GameStates
     {
         public void Enter()
         {
-            Timer.Instance.StartTimer(true);
+            Timer.Instance.StartTimer();
+            
+            Debug.Log("GameBehaviorPlayingEarlyGame");
         }
         public void Update()
         {
-            
+            Debug.Log("EarlyGame Update");
         }
         public void Exit()
         {
-            Debug.Log("Earlygame End");
+            Debug.Log("Earlygame Exit");
         }
     }
 }

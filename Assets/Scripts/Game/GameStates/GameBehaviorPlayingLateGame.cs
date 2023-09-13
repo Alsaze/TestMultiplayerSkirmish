@@ -11,12 +11,13 @@ namespace GameStates
 
         public void Update()
         {
-            Debug.Log("Lategame play");
+            
+            Debug.Log("Lategame Update");
         }
 
         public void Exit()
         {
-            
+            Debug.Log("Lategame Exit");
         }
     }
 }

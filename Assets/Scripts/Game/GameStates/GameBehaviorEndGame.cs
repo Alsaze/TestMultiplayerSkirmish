@@ -11,7 +11,7 @@ namespace GameStates
 
         public void Update()
         {
-            Debug.Log("EndGame");
+            Debug.Log("EndGame Update");
         }
 
         public void Exit()
